@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: black;
+    color: #ededed;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: .4s;
+}
+
+.navbar a{  
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar a:hover, .navbar a.on{
+    color: #00abf0;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: url();
+    background-size: cover;
+    background-position: center;
+
+}
+.con{
+    max-width: 600px;
+}
+.con h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 1s;
+}
+.con h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.con h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 1.3s;
+}
+.con h3{
+    position: relative;
+     font-size: 32px;
+     font-weight: 700;
+     color: #00abf0;
+}
+.con p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.con p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 1.4s;
+}
+.con .btn{
+    position: relative;
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.con .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 1.9s;
+   z-index: 2;
+}
+.btn a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+   font-size: 19px;
+   color: #081b29;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing: 1px;
+   z-index: 1;
+   overflow: hidden;
+   transition: .6s;
+}
+.btn a:nth-child(1):hover{
+    color: #00abf0;
+}
+.btn a:nth-child(2){
+    background:transparent;
+    color:  #00abf0;
+}
+.btn a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn a::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 100%;
+    background: black;
+     z-index: -1;
+     transition: .5s;
+}
+.btn a:hover::before{
+    width: 100%;
+}
+.social{
+     position: absolute;
+     bottom: 40px;
+     width: 170px;
+   
+     display: flex;
+     justify-content: space-between;
+}
+ .social::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 2.5s;
+   z-index: 2;
+}
+.social a{
+    position:  relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.social a:hover{
+    color: #081b29;
+}
+.social a::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+     z-index: -1;
+     transition: .5s;
+}
+.social a:hover::before{
+    width: 100%;
+}
+.imghover{
+     position: absolute;
+     top: 0;
+     right: 30px;
+     width: 500px;
+     height: 100%;
+     background-color: transparent;
+     transition: 3s;
+     animation: hover .1s forwards;
+     animation-delay: 4s;
+     pointer-events: none;
+}
+.imghover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 142%;
+    height: 100%;
+    background: black;
+   animation: show 1s ease forwards ;
+   animation-delay: 3s;
+   z-index: 100;
+}
+.home .imghover:hover{
+     background:#081b29;
+     opacity: 0;
+}
+
+ @keyframes show {
+    100%{
+        width: 0;
+    }
+ }
+ @keyframes hover {
+     100%{
+        pointer-events: auto;
+     }
+ }
+ .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+   height: 100%;
+   margin-top: 0;
+ }
+ .skills h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+   
+ }
+ .skills h3{
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 900px;
+ }
+
+ .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+   height: 100%;
+   margin-top: 0;
+ }
+ .container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+ }
+ .about h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 50px;
+   
+ }
+ .about p{
+    position: relative;
+    font-size: 20px;
+    margin: 20px 0 40px;
+    max-width: 900px;
+ 
+ }
+ 
+ .projects {
+    display: flex;
+    align-items: center;
+ 
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+   margin-top: 0;
+ }
+ .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 10%;
+    height: 100%;
+    margin-top: 0;
+ }
+
+ .project1 img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #00abf0;
+ }
+ .project2 img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #00abf0;
+ }
+ .projects h1,h3{
+    color: #00abf0;
+    margin-bottom: 20px;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+ .projects{
+    justify-content: space-around;
+ }
+ .cont .mo{
+    margin-bottom: 250px;
+ }
+ .cont h1{
+    margin-bottom: 100px;
+ }
+  footer{
+     text-align: center;
+ }
+ 
